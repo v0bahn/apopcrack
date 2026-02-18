@@ -2,7 +2,7 @@
 
 Script Python de crackage de mots de passe via le protocole **APOP**, conçu lors d'un **CTF**. 
 
----
+
 
 ## Qu'est-ce que l'APOP ?
 
@@ -14,7 +14,7 @@ MD5(timestamp + mot_de_passe)
 
 Si un attaquant capture ce timestamp et le hash MD5 résultant (via Wireshark ou toute capture réseau), il peut rejouer l'opération localement pour retrouver le mot de passe en clair.
 
----
+
 
 ## Fonctionnement du script
 
@@ -27,7 +27,7 @@ Le script effectue une **attaque par dictionnaire** :
 
 > ⚠️ Ce n'est pas un brute-force pur, mais une attaque par dictionnaire basée sur `rockyou.txt` pour l'example.
 
----
+
 
 ## Prérequis
 
@@ -35,7 +35,7 @@ Le script effectue une **attaque par dictionnaire** :
 - Une wordlist
 - Les modules Python utilisés sont tous issus de la bibliothèque standard : `hashlib`, `time`
 
----
+
 
 ## Configuration
 
@@ -52,7 +52,7 @@ target_hash = "4ddd4137b84ff2db7291b568289717f0"
 wordlist_path = "/usr/share/wordlists/rockyou.txt"
 ```
 
----
+
 
 ## Utilisation
 
@@ -78,7 +78,7 @@ python3 APOPcrack.py
 [+] Vitesse       : 1,238,697 hash/s
 ```
 
----
+
 
 ## Cas d'usage typique (CTF)
 
