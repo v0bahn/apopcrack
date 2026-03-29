@@ -88,7 +88,6 @@ python3 APOPcrack.py
 4. Renseigner ces deux valeurs dans le script
 5. Lancer le script
 
----
 
 ## Avertissement
 
